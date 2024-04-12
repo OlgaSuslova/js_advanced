@@ -18,3 +18,41 @@
 библиотеке и возвращать true или false в зависимости от того, есть ли такая 
 книга в списке или нет.
 */
+
+class Library {
+  #books = [];
+  
+  constructor(books) {
+    if (books.some((book) => this.#books.includes(book)))
+      throw new Error("Dublicate book");
+
+    this.#books = books;
+  }
+
+  allBooks() {
+    return this.#books;
+  }
+  addBook(title) {
+    if (this.#books.includes(title)) throw new Error("Dublicate book");
+
+    this.#books.push(title);
+  }
+  removeBook(title) {
+    if (!this.#books.includes(title)) throw new Error("Book is not in library");
+
+    this.#books = this.#books.filter((book) => book !== title);
+  }
+  hasBook(title) {
+    return this.#books.includes(title);
+  }
+}
+
+const library = new Library(["<NAME1>", "<NAME2>"]);
+console.log(library.allBooks());
+
+library.addBook("<NAME3>");
+console.log(library.allBooks());
+
+library.removeBook("<NAME3>");
+console.log(library.allBooks());
+library.hasBook("<NAME1>");
