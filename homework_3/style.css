@@ -1,0 +1,54 @@
+* {
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+h1 {
+    color: #190116;
+    text-align: center;
+}
+
+.product__label {
+    color:  #190116;
+    font-size: 18px;
+}
+
+.form {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.product__submit_review, .product__btn, .product__delete_btn {
+    background-color: #190116;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.link {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 50px;
+}
+
+.product__review_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Страница добавления отзыва о продукте</h1>
+    <form class="form" action="#">
+      <label class="product__label" for="name">Название продукта:</label>
+      <input
+        class="product__name"
+        type="text"
+        id="name"
+        name="name"
+        width="100px"
+      />
+      <label class="product__label" for="text">Текст отзыва:</label>
+      <textarea
+        class="product__review"
+        id="text"
+        name="text"
+        width="150px"
+      ></textarea>
+      <button class="product__submit_review">Добавить отзыв</button>
+      <div class="product__error"></div>
+    </form>
+
+    <a class="link" href="lookReviews.html">Посмотреть отзывы</a>
+
+    <script src="createReview.js"></script>
+  </body>
+</html>
